@@ -1,4 +1,4 @@
-#Sun Mar 03 14:32:14 EET 2024
-base.0=/home/zema/Desktop/all/e_commerce_app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Fri Mar 08 01:48:42 EET 2024
+base.0=/home/zema/Desktop/2/e_commerce_app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
