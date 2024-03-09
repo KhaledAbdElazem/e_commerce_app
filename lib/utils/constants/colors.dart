@@ -13,4 +13,7 @@ class TColors {
   static const Color light = Color.fromARGB(255, 202, 202, 233);
   static const Color dark = Color.fromARGB(255, 32, 32, 30);
   static const Color primaryBackgraound = Color.fromARGB(241, 216, 216, 240);
+
+  static const Color darkGray = Color.fromRGBO(27, 27, 27, 1);
+  static const Color gray = Color.fromRGBO(96, 98, 102, 1);
 }
