@@ -13,4 +13,5 @@ com.example.e_commerce_app-mergeDebugResources-11 /home/zema/Desktop/2/e_commerc
 com.example.e_commerce_app-mergeDebugResources-12 /home/zema/Desktop/2/e_commerce_app/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
 com.example.e_commerce_app-merged_res-13 /home/zema/Desktop/2/e_commerce_app/build/app/intermediates/merged_res/debug
 com.example.e_commerce_app-packaged_res-14 /home/zema/Desktop/2/e_commerce_app/build/flutter_native_splash/intermediates/packaged_res/debug
-com.example.e_commerce_app-packaged_res-15 /home/zema/Desktop/2/e_commerce_app/build/url_launcher_android/intermediates/packaged_res/debug
+com.example.e_commerce_app-packaged_res-15 /home/zema/Desktop/2/e_commerce_app/build/path_provider_android/intermediates/packaged_res/debug
+com.example.e_commerce_app-packaged_res-16 /home/zema/Desktop/2/e_commerce_app/build/url_launcher_android/intermediates/packaged_res/debug

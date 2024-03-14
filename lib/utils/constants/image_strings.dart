@@ -4,4 +4,6 @@ class TImage {
 
   static const String google = "assets/icons/google.png";
   static const String facebook = "assets/icons/facebook_light.png";
+
+  static const String onboardingImage1 = "assets/icons/OnBoardingImage1.gif";
 }

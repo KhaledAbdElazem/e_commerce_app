@@ -2,7 +2,6 @@ import 'package:e_commerce_app/common/styles/spacing_styles.dart';
 import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:e_commerce_app/utils/constants/text_strings.dart';
 import 'package:e_commerce_app/utils/constants/sizes.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../../../utils/helpers/helper_functions.dart';
@@ -91,7 +90,7 @@ class LoginScreen extends StatelessWidget {
                               width: double.infinity,
                               child: ElevatedButton(
                                 onPressed: () {},
-                                child: Text(TTexts.signin),
+                                child: const Text(TTexts.signin),
                               )),
 
                           const SizedBox(
@@ -102,7 +101,7 @@ class LoginScreen extends StatelessWidget {
                               width: double.infinity,
                               child: OutlinedButton(
                                 onPressed: () {},
-                                child: Text(TTexts.createAccount),
+                                child: const Text(TTexts.createAccount),
                               )),
                           const SizedBox(
                             height: TSizes.spacebtwSections,
