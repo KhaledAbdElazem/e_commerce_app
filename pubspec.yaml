@@ -26,7 +26,7 @@ dependencies:
 
   flutter_native_splash: ^2.3.13
 
-  # smooth_page_indicator: ^1.1.0
+  smooth_page_indicator: ^1.1.0
 
   #icons
 
@@ -59,11 +59,11 @@ flutter:
 
   #---------LOCAL ASSETS---------#
 
-  # assets:
-  #   - assets/logos/
-  #   - assets/icons/brands
-  #   - assets/images
-  # - assets/images/OnBoardingImage.gif
+  assets:
+    # - assets/logos/
+    # - assets/icons/brands
+    # - assets/images
+    - assets/images/
 
   #---------LOCAL fonts---------#
   # fonts:
