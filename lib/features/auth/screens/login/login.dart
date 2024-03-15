@@ -1,8 +1,8 @@
+import 'package:flutter/material.dart';
 import 'package:e_commerce_app/common/styles/spacing_styles.dart';
 import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:e_commerce_app/utils/constants/text_strings.dart';
 import 'package:e_commerce_app/utils/constants/sizes.dart';
-import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../../../utils/helpers/helper_functions.dart';
 import '../../../../utils/constants/image_strings.dart';
@@ -13,12 +13,14 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
+
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
           padding: TSpacingStyle.paddingWithAppBarHeight,
           child: Column(
             children: [
+              /// Logo Title Sub-Title
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -35,11 +37,14 @@ class LoginScreen extends StatelessWidget {
                     height: TSizes.sm,
                   ),
                   Text(
-                    TTexts.loginTitle,
-                    style: Theme.of(context).textTheme.headlineMedium,
+                    TTexts.loginSubTitle,
+                    style: Theme.of(context).textTheme.bodyMedium,
                   ),
                 ],
               ),
+
+              /// Form
+
               Form(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
@@ -82,12 +87,13 @@ class LoginScreen extends StatelessWidget {
                           TextButton(
                               onPressed: () {},
                               child: const Text(TTexts.forgetPassword)),
+
                           const SizedBox(
                             height: TSizes.spaceBtwInputFields,
                           ),
 
                           SizedBox(
-                              width: double.infinity,
+                              width: double.nan,
                               child: ElevatedButton(
                                 onPressed: () {},
                                 child: const Text(TTexts.signin),

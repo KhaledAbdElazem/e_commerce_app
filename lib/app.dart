@@ -1,4 +1,6 @@
+// import 'package:e_commerce_app/features/auth/screens/login/login.dart';
 import 'package:e_commerce_app/features/auth/screens/onboarding/onboarding.dart';
+// import 'package:e_commerce_app/features/auth/screens/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce_app/utils/themes/theme.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -14,6 +16,9 @@ class TheApp extends StatelessWidget {
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       home: const OnBoardingScreen(),
+      // routes: {
+      //   '/': (context) => const LoginScreen(),
+      // },
     );
   }
 }
