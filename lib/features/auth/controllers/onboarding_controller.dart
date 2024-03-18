@@ -1,4 +1,6 @@
-// import '../screens/login/login.dart';
+// ignore_for_file: avoid_print
+
+import '../screens/login/login.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
@@ -18,18 +20,20 @@ class OnBoardingController extends GetxController {
 
   void nextPage() {
     if (currentPageIndex.value == 2) {
-      // Get.offAll(() => const LoginScreen());
+      // print("1");
+      Get.offAll(() => const LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);
+      // print("2");
     }
   }
 
   void skipPage() {
-    currentPageIndex.value = 2;
+    int page = currentPageIndex.value = 2;
 
     // Get.offAll(() => const LoginScreen());
 
-    // pageController.jumpToPage(2);
+    pageController.jumpToPage(page);
   }
 }

@@ -8,7 +8,7 @@ import '../../../../utils/helpers/helper_functions.dart';
 import '../../../../utils/constants/image_strings.dart';
 
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+  const LoginScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class LoginScreen extends StatelessWidget {
           padding: TSpacingStyle.paddingWithAppBarHeight,
           child: Column(
             children: [
-              /// Logo Title Sub-Title
+              // Logo Title Sub-Title
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -33,18 +33,16 @@ class LoginScreen extends StatelessWidget {
                     TTexts.loginTitle,
                     style: Theme.of(context).textTheme.headlineMedium,
                   ),
-                  const SizedBox(
-                    height: TSizes.sm,
-                  ),
+                  const SizedBox(height: TSizes.sm),
                   Text(
                     TTexts.loginSubTitle,
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
+                  const SizedBox(height: TSizes.spacebtwSections),
                 ],
               ),
 
-              /// Form
-
+              // Form
               Form(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
@@ -58,9 +56,7 @@ class LoginScreen extends StatelessWidget {
                           labelText: TTexts.email,
                         ),
                       ),
-                      const SizedBox(
-                        height: TSizes.spaceBtwInputFields,
-                      ),
+                      const SizedBox(height: TSizes.spaceBtwInputFields),
                       TextFormField(
                         decoration: const InputDecoration(
                           prefixIcon: Icon(Iconsax.password_check),
@@ -68,67 +64,43 @@ class LoginScreen extends StatelessWidget {
                           suffixIcon: Icon(Iconsax.eye_slash),
                         ),
                       ),
-                      const SizedBox(
-                        height: TSizes.spaceBtwInputFields / 2,
-                      ),
+                      const SizedBox(height: TSizes.spaceBtwInputFields / 2),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          ///rememberMe
-                          Row(
-                            children: [
-                              Checkbox(value: true, onChanged: (value) {}),
-                              const Text(TTexts.rememberMe),
-                            ],
-                          ),
-
-                          ///Forget Password
-
-                          TextButton(
-                              onPressed: () {},
-                              child: const Text(TTexts.forgetPassword)),
-
-                          const SizedBox(
-                            height: TSizes.spaceBtwInputFields,
-                          ),
-
-                          SizedBox(
-                              width: double.nan,
-                              child: ElevatedButton(
+                          Checkbox(value: true, onChanged: (value) {}),
+                          const Text(TTexts.rememberMe),
+                          Expanded(
+                            child: Align(
+                              alignment: Alignment.centerRight,
+                              child: TextButton(
                                 onPressed: () {},
-                                child: const Text(TTexts.signin),
-                              )),
-
-                          const SizedBox(
-                            height: TSizes.spacebtwSections,
-                          ),
-
-                          SizedBox(
-                              width: double.infinity,
-                              child: OutlinedButton(
-                                onPressed: () {},
-                                child: const Text(TTexts.createAccount),
-                              )),
-                          const SizedBox(
-                            height: TSizes.spacebtwSections,
+                                child: const Text(TTexts.forgetPassword),
+                              ),
+                            ),
                           ),
                         ],
-                      )
+                      ),
+                      const SizedBox(height: TSizes.spacebtwSections),
+                      ElevatedButton(
+                        onPressed: () {},
+                        child: const Text(TTexts.signin),
+                      ),
+                      const SizedBox(height: TSizes.spacebtwSections),
+                      OutlinedButton(
+                        onPressed: () {},
+                        child: const Text(TTexts.createAccount),
+                      ),
                     ],
                   ),
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Divider(
-                    color: dark ? TColors.darkGray : TColors.gray,
-                    thickness: 0.5,
-                    indent: 60,
-                    endIndent: 5,
-                  )
-                ],
-              )
+              const SizedBox(height: TSizes.spacebtwSections),
+              Divider(
+                color: dark ? TColors.darkGray : TColors.gray,
+                thickness: 0.5,
+                indent: 60,
+                endIndent: 5,
+              ),
             ],
           ),
         ),

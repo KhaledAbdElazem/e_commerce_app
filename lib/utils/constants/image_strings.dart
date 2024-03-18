@@ -1,6 +1,6 @@
 class TImage {
-  static const String darkAppLogo = "assets/images/image1.jpg";
-  static const String lightAppLogo = "assets/images/image1.jpg";
+  static const String darkAppLogo = "assets/images/logoblack.png";
+  static const String lightAppLogo = "assets/images/logocolor.png";
 
   static const String google = "assets/icons/google.png";
   static const String facebook = "assets/icons/facebook_light.png";
