@@ -1,8 +1,12 @@
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
 import 'package:e_commerce_app/common/styles/spacing_styles.dart';
 import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:e_commerce_app/utils/constants/text_strings.dart';
 import 'package:e_commerce_app/utils/constants/sizes.dart';
+import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../../../utils/helpers/helper_functions.dart';
 import '../../../../utils/constants/image_strings.dart';
@@ -35,7 +39,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: TSizes.sm),
                   Text(
-                    TTexts.loginSubTitle,
+                    TTexts.loginsubtitle,
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
                   const SizedBox(height: TSizes.spacebtwSections),
@@ -94,13 +98,64 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: TSizes.spacebtwSections),
-              Divider(
-                color: dark ? TColors.darkGray : TColors.gray,
-                thickness: 0.5,
-                indent: 60,
-                endIndent: 5,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Flexible(
+                    child: Divider(
+                      color: dark ? TColors.darkGray : TColors.gray,
+                      thickness: 0.5,
+                      indent: 60,
+                      endIndent: 5,
+                    ),
+                  ),
+                  Text(
+                    TTexts.orSignUpWith.capitalize!,
+                    style: Theme.of(context).textTheme.labelMedium,
+                  ),
+                  Flexible(
+                    child: Divider(
+                      color: dark ? TColors.darkGray : TColors.gray,
+                      thickness: 0.5,
+                      indent: 5,
+                      endIndent: 60,
+                    ),
+                  ),
+                ],
               ),
+              const SizedBox(height: TSizes.spacebtwSections),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(color: TColors.gray),
+                        borderRadius: BorderRadius.circular(100)),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: const Image(
+                        width: TSizes.iconMd,
+                        height: TSizes.iconMd,
+                        image: AssetImage(TImage.google),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: TSizes.spacebtwItems),
+                  Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(color: TColors.gray),
+                        borderRadius: BorderRadius.circular(100)),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: const Image(
+                        width: TSizes.iconMd,
+                        height: TSizes.iconMd,
+                        image: AssetImage(TImage.facebook),
+                      ),
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         ),
